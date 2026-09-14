@@ -6,13 +6,18 @@ log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - xiaohe
   type: vless
-  server: uycneynsieuocxniseunciusecmsepiock.novexgroup.ir
-  port: 2096
-  uuid: 1a67126c-b9c4-4e78-b96e-eabd4002ab0c
+  server: 104.24.30.89
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: uycneynsieuocxniseunciusecmsepiock.novexgroup.ir
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select

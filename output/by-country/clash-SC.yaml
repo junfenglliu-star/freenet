@@ -6,19 +6,32 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - xiaohe
   type: vless
-  server: 45.130.125.73
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-cea58e4acf49
+  server: 172.66.47.45
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: web-app-aug8yr.app-f1qsy1.workers.dev
+  servername: wk1.f1w.de5.net
   network: ws
   ws-opts:
-    path: /api/ws
+    path: /
     headers:
-      Host: web-app-aug8yr.app-f1qsy1.workers.dev
+      Host: wk1.f1w.de5.net
 - name: 🇸🇨 SC 02 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 03 - xiaohe
   type: vless
   server: 45.192.224.30
   port: 8880
@@ -31,32 +44,34 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime17.workers.dev
-- name: 🇸🇨 SC 03 - xiaohe
-  type: vless
-  server: 172.64.229.2
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇨 SC 04 - xiaohe
   type: vless
-  server: 108.162.198.178
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.17.148.22
+  port: 443
+  uuid: 518de0d4-6ce8-4404-80db-23c4a8806128
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ez-5faafb.esmaoi.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /eyJqdW5rIjoiQkFLTnhqM2tZTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: ez-5faafb.esmaoi.workers.dev
+- name: 🇸🇨 SC 05 - xiaohe
+  type: vless
+  server: 45.130.125.73
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-cea58e4acf49
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web-app-aug8yr.app-f1qsy1.workers.dev
+  network: ws
+  ws-opts:
+    path: /api/ws
+    headers:
+      Host: web-app-aug8yr.app-f1qsy1.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,6 +81,7 @@ proxy-groups:
   - 🇸🇨 SC 02 - xiaohe
   - 🇸🇨 SC 03 - xiaohe
   - 🇸🇨 SC 04 - xiaohe
+  - 🇸🇨 SC 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,5 +91,6 @@ proxy-groups:
   - 🇸🇨 SC 02 - xiaohe
   - 🇸🇨 SC 03 - xiaohe
   - 🇸🇨 SC 04 - xiaohe
+  - 🇸🇨 SC 05 - xiaohe
 rules:
 - MATCH,PROXIES
