@@ -42,27 +42,13 @@ proxies:
   sni: msk.frkn.org
   skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 130.49.189.158
-  port: 43558
+  server: ru.xiaoliyu.cyou
+  port: 4433
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: 193.17.92.57
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1cbb3702-b434-45cf-8520-3e32d860fd83
-  tls: true
-  reality-opts:
-    public-key: G7VlRXdpKKaZ_33pA0Zsii70uiYkeoBiVYgAD_tL_28
-    short-id: 76f9d74c385ae618
-  servername: vk.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-fd03cd54
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: ru.xiaoliyu.cyou
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,7 +60,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,6 +71,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
 rules:
 - MATCH,PROXIES
