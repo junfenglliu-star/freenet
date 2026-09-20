@@ -25,10 +25,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+  server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
   port: 443
   udp: true
   type: vmess
@@ -36,7 +34,7 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+  servername: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
   skip-cert-verify: false
   network: ws
   ws-opts:
