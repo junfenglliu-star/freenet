@@ -53,25 +53,9 @@ jobs:
           if git diff --staged --quiet; then
             echo "没有节点变动与内容更新。"
           else
-            git fetch origin main
-            git rebase origin/main
             git commit -m "Auto Update: $(date -u '+%Y-%m-%d %H:%M:%S') UTC"
-            git push origin main
+            git push
           fi
-
-      - name: Purge jsDelivr CDN (post-push)
-        if: success()
-        run: |
-          REPO="${GITHUB_REPOSITORY}"
-          p() { curl -s -o /dev/null "https://purge.jsdelivr.net/gh/${REPO}@main/$1" || true; }
-          p README.md
-          for f in v2ray.txt clash.yaml singbox.json residential.txt residential-clash.yaml residential-singbox.json; do
-            p "output/$f"
-          done
-          find output/residential-by-country output/by-country -type f 2>/dev/null | while read -r f; do
-            p "$f"; sleep 0.2
-          done
-          echo "[+] jsDelivr CDN purge done (after push)"
 
       - name: Purge jsDelivr CDN (post-push)
         if: success()
