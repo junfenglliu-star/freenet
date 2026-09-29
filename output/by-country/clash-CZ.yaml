@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
-  server: 210.152.85.154
-  port: 19364
+- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 104.21.89.41
+  port: 443
   udp: true
   type: vless
-  uuid: 73fd7403-7286-4839-97ad-257ab536054c
+  uuid: 4ccf70f9-7632-4b5a-9557-10d2dd347bb2
   tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  servername: To6R63-kKChiGHqm2.vxz0Dduq7to7Su0CDQf.worKERs.DEV
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /vl/zhlUKkHT4SNWHmPFOf4cu6
     headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+      Host: to6r63-kkchighqm2.vxz0dduq7to7su0cdqf.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 rules:
 - MATCH,PROXIES
