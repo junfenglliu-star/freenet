@@ -54,8 +54,8 @@ jobs:
             echo "没有节点变动与内容更新。"
           else
             git fetch origin main
-            git rebase origin/main
             git commit -m "Auto Update: $(date -u '+%Y-%m-%d %H:%M:%S') UTC"
+            git pull origin main --rebase
             git push origin main
           fi
 
