@@ -5,23 +5,19 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "new3.api.go-vpn.club",
-      "server_port": 443,
-      "uuid": "41e71ba7-d389-47aa-94f7-ed1f55fdbcdf",
+      "tag": "🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe",
+      "server": "31.77.227.6",
+      "server_port": 52006,
+      "uuid": "bc659d88-a1e0-076c-a49a-7b51b26a7a7f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdnjs.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "E1te_g9q6EWQVOCgjwI4PF-cml9qqW7OEAf33tYkUxQ",
-          "short_id": "17d334ad29b2ff40"
-        }
+        "server_name": "bigdick.gamegrow.ru",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ]
       }
     },
     {
@@ -29,14 +25,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

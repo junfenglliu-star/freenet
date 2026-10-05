@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "172.67.216.233",
-      "server_port": 443,
-      "uuid": "23e34376-aa47-4c8d-97ea-02915e01fcca",
+      "server": "188.114.97.3",
+      "server_port": 8443,
+      "uuid": "a6fd8b83-7926-4b4e-884b-14f64e578815",
       "tls": {
         "enabled": true,
-        "server_name": "j3bx1s9mk2sylw66yj-hsk.tjsjrkk8gbhts0q5-0os.workers.dev",
+        "server_name": "dn044toytgxw7ya2rygfhrvpw6mbl.pabjienmi.workers.dev",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -23,9 +23,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vl/uwojyr8LT2gMeHnQJVf2HntOGHsvRH3",
+        "path": "/vl/w47aznWVyUF9g3ciQ6GVv?ed=2560",
         "headers": {
-          "Host": "j3bx1s9mk2sylw66yj-hsk.tjsjrkk8gbhts0q5-0os.workers.dev"
+          "Host": "dn044toytgxw7ya2rygfhrvpw6mbl.pabjienmi.workers.dev"
         }
       }
     },
