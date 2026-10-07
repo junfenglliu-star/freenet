@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "to6r63-kkchighqm2.vxz0dduq7to7su0cdqf.workers.dev",
+      "server": "104.21.96.1",
       "server_port": 443,
-      "uuid": "4ccf70f9-7632-4b5a-9557-10d2dd347bb2",
+      "uuid": "0836463b-214f-4af6-aa85-85a56a62388e",
       "tls": {
         "enabled": true,
-        "server_name": "to6r63-kkchighqm2.vxz0dduq7to7su0cdqf.workers.dev",
+        "server_name": "d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,7 +20,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vl/zhlUKkHT4SNWHmPFOf4cu6"
+        "path": "/?TELEGRAM",
+        "headers": {
+          "Host": "d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev"
+        }
       }
     },
     {
