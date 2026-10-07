@@ -1629,8 +1629,26 @@ def classify_network_type(ip: str, country: str, asn, org: str, ip_api_rec: dict
 def outbound_to_clash(node: dict, name: str) -> dict:
     """sing-box outbound → Clash (Meta/mihomo) proxy dict"""
     t = node.get("type")
-    server, port = node["server"], node["server_port"]
-    proxy = {"name": name, "server": server, "port": port, "udp": True}
+    server = node.get("server")
+    port = None
+
+    # Some valid nodes do not have a single server_port; they only expose
+    # server_ports like ["2087:2097"] or ["443:443"] (common in hysteria2 mport).
+    if isinstance(node.get("server_port"), int) and node["server_port"] > 0:
+        port = int(node["server_port"])
+    else:
+        for entry in node.get("server_ports", []) or []:
+            try:
+                port = int(str(entry).split(":")[0])
+                if port > 0:
+                    break
+            except Exception:
+                continue
+
+    if not server or not port:
+        return None
+
+    proxy = {"name": name, "server": server, "port": int(port), "udp": True}
 
     if t == "vless":
         proxy["type"] = "vless"
