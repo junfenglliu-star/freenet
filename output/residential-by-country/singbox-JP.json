@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "104.21.96.1",
-      "server_port": 443,
-      "uuid": "0836463b-214f-4af6-aa85-85a56a62388e",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+      "server": "128.241.25.11",
+      "server_port": 30021,
+      "uuid": "c7dcd436-76e0-4f8f-9a28-d9c20bff304a",
       "tls": {
         "enabled": true,
-        "server_name": "d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev",
+        "server_name": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/?TELEGRAM",
+        "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev"
+          "Host": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
         }
       }
     },
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 91.228.227.9
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8fc806fa-350b-4548-937a-2bf35f7fe7eb
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _KTsOFhGnC0W28ZqO8_FApozMp7tJ9cVBTLKLAA_OR0
-    short-id: ae64c9b46bff174a
-  servername: tr1.sky-vault.top
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: 78.135.73.47
   port: 443
   udp: true
@@ -29,8 +16,8 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: ststictr.hamiramkemax.ir
   port: 1081
   udp: true
@@ -42,7 +29,7 @@ proxies:
     short-id: daa22fbb023ab4a2
   servername: www12.gameservice-iramn3.com
   client-fingerprint: edge
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -53,8 +40,8 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   server: 85.192.48.142
   port: 443
   udp: true
@@ -76,7 +63,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,6 +72,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 rules:
 - MATCH,PROXIES

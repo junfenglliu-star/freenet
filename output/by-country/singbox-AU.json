@@ -38,7 +38,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -48,8 +48,20 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
+      "server": "vpn-au-001.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-au-001.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
       "server": "82.117.225.80",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
@@ -65,18 +77,6 @@
         "headers": {
           "Host": "aksai.org"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-      "server": "vpn-au-001.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-au-001.fastervpn.world",
-        "insecure": true
       }
     },
     {
