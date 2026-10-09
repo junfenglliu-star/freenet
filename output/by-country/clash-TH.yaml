@@ -13,7 +13,7 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  server: 104.18.26.90
+  server: 104.21.34.106
   port: 443
   udp: true
   type: vless
@@ -21,13 +21,25 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
+  server: 2610sgdodo.volkvpn.com
+  port: 25102
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
+    short-id: cbd39bea0805e2
+  servername: www.kaidee.com
+  client-fingerprint: ios
+- name: 🇹🇭 泰国 (Thailand) 04 - xiaohe
   server: support.zoom.us.v2ray.simspeedup.com
   port: 80
   udp: true
@@ -36,14 +48,8 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-- name: 🇹🇭 泰国 (Thailand) 04 - xiaohe
-  server: silversbgfgov.vip43.wogbcnmnagfwgov.com
-  port: 11243
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
+    headers:
+      Host: support.zoom.us.v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
