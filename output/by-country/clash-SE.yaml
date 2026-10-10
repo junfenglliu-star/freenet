@@ -15,7 +15,7 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
@@ -32,7 +32,7 @@ proxies:
   servername: swidenlanzerotte.live
   client-fingerprint: qq
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 94.143.231.146
+  server: sub.merky.top
   port: 443
   udp: true
   type: vless
@@ -40,12 +40,9 @@ proxies:
   tls: true
   servername: sub.merky.top
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
