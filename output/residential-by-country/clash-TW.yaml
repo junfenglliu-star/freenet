@@ -16,8 +16,16 @@ proxies:
   servername: addons.mozilla.org
   client-fingerprint: safari
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: sbgfgov.vip23.wogacnmnagfwgov.com
-  port: 11223
+  server: sg.australiacaregroup.site
+  port: 20004
+  udp: true
+  type: hysteria2
+  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  sni: tw.australiacaregroup.site
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  server: sbgfgov.vip24.wogacnmnagfwgov.com
+  port: 11224
   udp: true
   type: vmess
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
@@ -30,6 +38,7 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -37,5 +46,6 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
