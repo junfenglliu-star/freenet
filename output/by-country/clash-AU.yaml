@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  server: vpn-au-001.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
   server: 144.172.65.72
   port: 8443
   udp: true
@@ -16,14 +24,6 @@ proxies:
     public-key: f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg
   servername: www.tradingview.com
   client-fingerprint: random
-- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  server: vpn-au-001.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
