@@ -5,29 +5,36 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe",
-      "server": "s3.huhiuh.space",
-      "server_port": 18642,
-      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+      "server": "147.15.108.14",
+      "password": "CyG0RFxMjzs41uQD4OLuHQ==",
       "tls": {
         "enabled": true,
-        "server_name": "s3.huhiuh.space",
+        "server_name": "rmgyvpn.rest",
         "insecure": true
-      }
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "CyG0RFxMjzs41uQD4OLuHQ=="
+      },
+      "server_ports": [
+        "20000:30000",
+        "20000:20000"
+      ]
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
