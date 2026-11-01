@@ -13,44 +13,21 @@
     {
       "type": "vless",
       "tag": "🇻🇳 越南 (Vietnam) 02 - xiaohe",
-      "server": "funagfrdfs.alixxplay.com",
-      "server_port": 55688,
+      "server": "154.21.203.106",
+      "server_port": 51279,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "bilibili-vn.biliimg.com",
+        "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw",
-          "short_id": "a46bb5972cf50671"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇻🇳 越南 (Vietnam) 03 - xiaohe",
-      "server": "172.67.168.158",
-      "server_port": 2087,
-      "uuid": "1d0e8e53-6999-4752-ac21-c0c54ff5bc09",
-      "tls": {
-        "enabled": true,
-        "server_name": "vn11vina.210z.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vlessvina",
-        "headers": {
-          "Host": "vn11vina.210z.dev"
+          "public_key": "f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A",
+          "short_id": "bb82c8"
         }
       }
     },
@@ -60,8 +37,7 @@
       "outbounds": [
         "auto",
         "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-        "🇻🇳 越南 (Vietnam) 02 - xiaohe",
-        "🇻🇳 越南 (Vietnam) 03 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 02 - xiaohe"
       ]
     },
     {
@@ -69,8 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-        "🇻🇳 越南 (Vietnam) 02 - xiaohe",
-        "🇻🇳 越南 (Vietnam) 03 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
