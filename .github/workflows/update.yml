@@ -3,7 +3,7 @@ name: Update Subscriptions
 on:
   schedule:
         # Run once every 3 days at 00:00 UTC
-    - cron: '0 0 */3 * *'
+    - cron: '0 0 */1 * *'
   workflow_dispatch: # 支持手动点击运行
 
 jobs:
