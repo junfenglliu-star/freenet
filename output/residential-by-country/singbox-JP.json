@@ -5,9 +5,9 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇷 阿根廷 (Argentina) 01 - xiaohe",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
       "server": "23.95.72.244",
-      "server_port": 59899,
+      "server_port": 52541,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -19,8 +19,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "5RmlkTNSD3o7K21MaILXo6_tAox6WCFeB3srTxkWIAM",
-          "short_id": "4ac1692abefd"
+          "public_key": "_DBQoND5nxcCxxCU0tO0b-h0E10ZFtPTwSp8CJ-f-gs",
+          "short_id": "ce5793a7ad9594"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇷 阿根廷 (Argentina) 01 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇷 阿根廷 (Argentina) 01 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
