@@ -20,11 +20,11 @@ proxies:
   password: Lp27rqyJq72bZsqX
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
   server: 195.238.126.20
-  port: 9011
+  port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
+  password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
   server: 195.238.126.20
   port: 9012
@@ -41,19 +41,12 @@ proxies:
   password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
   server: 195.238.126.20
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - xiaohe
-  server: 195.238.126.20
   port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - xiaohe
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - xiaohe
   server: 84.32.209.103
   port: 443
   udp: true
@@ -62,7 +55,7 @@ proxies:
   tls: true
   servername: edge-lt.lindenpixel.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: edge
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
@@ -78,7 +71,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 07 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,6 +83,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 07 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 08 - xiaohe
 rules:
 - MATCH,PROXIES
