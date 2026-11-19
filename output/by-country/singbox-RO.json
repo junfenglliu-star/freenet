@@ -4,36 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
-      "server": "hy2-new.aspidnet.xyz",
-      "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
-      "server": "185.156.44.99",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -43,13 +15,46 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
           "short_id": "d06d78e974491b6e"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
+      "server": "cdn4.velmoradigital.store",
+      "server_port": 2443,
+      "uuid": "32ea050a-1981-4ed2-b63f-77e0f53c4b65",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn4.velmoradigital.store",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
+      "server": "185.156.44.99",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "whatsapp.com",
+        "insecure": true
       }
     },
     {
