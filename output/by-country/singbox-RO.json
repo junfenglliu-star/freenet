@@ -32,8 +32,60 @@
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
+        "server_name": "whatsapp.com",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
+      "server": "185.247.224.206",
+      "server_port": 443,
+      "uuid": "0b6a7fe0-206b-4071-9f96-cd397d1ec01a",
+      "tls": {
+        "enabled": true,
+        "server_name": "inlay.merlano.monster",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/de3/stream",
+        "headers": {
+          "Host": "inlay.merlano.monster"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - xiaohe",
+      "server": "185.247.224.206",
+      "server_port": 443,
+      "uuid": "83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e",
+      "tls": {
+        "enabled": true,
+        "server_name": "lagoon.gerqix.online",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/de5/stream",
+        "headers": {
+          "Host": "lagoon.gerqix.online"
+        }
       }
     },
     {
@@ -42,7 +94,9 @@
       "outbounds": [
         "auto",
         "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
-        "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 04 - xiaohe"
       ]
     },
     {
@@ -50,7 +104,9 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
-        "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -23,8 +23,38 @@ proxies:
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: www.amazon.com
+  sni: whatsapp.com
   skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
+  server: 185.247.224.206
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  tls: true
+  servername: inlay.merlano.monster
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de3/stream
+    headers:
+      Host: inlay.merlano.monster
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
+  server: 185.247.224.206
+  port: 443
+  udp: true
+  type: vless
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  tls: true
+  servername: lagoon.gerqix.online
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de5/stream
+    headers:
+      Host: lagoon.gerqix.online
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +62,8 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +71,7 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
 rules:
 - MATCH,PROXIES
