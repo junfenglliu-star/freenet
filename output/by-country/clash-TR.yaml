@@ -5,36 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 107.181.155.27
+  server: tr.subscriptionservice.ir
   port: 2089
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: T199MCnogZBKi0QJdcSgUnoL3U9wl7t1
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: v2new.nimbaha9.ir
-  port: 8080
-  udp: true
-  type: vless
-  uuid: f279c19a-b324-40cf-af57-049f9b1b68f2
-  network: ws
-  ws-opts:
-    path: /XDS45
-    headers:
-      Host: v2new.nimbaha9.ir
+  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 rules:
 - MATCH,PROXIES
