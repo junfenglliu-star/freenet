@@ -12,13 +12,20 @@ proxies:
   cipher: aes-256-gcm
   password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 90.156.203.62
+  port: 5112
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: VVlAff77CnAU43Aoc5j15Y
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 185.22.152.168
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 194.26.229.207
   port: 2200
   udp: true
@@ -29,29 +36,7 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 136.148.83.70
-  port: 443
-  udp: true
-  type: vless
-  uuid: 00000000-0000-0001-0000-000000000000
-  tls: true
-  servername: aszbk-ru-78dc.my-fade.cloud
-  skip-cert-verify: false
-  client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 201.51.12.98
-  port: 443
-  udp: true
-  type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  servername: vps3.nemnogogo.com
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   server: 200.169.179.233
   port: 443
   udp: true
@@ -64,25 +49,24 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  server: 136.148.83.69
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  tls: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   server: 130.49.189.158
   port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 0SxLXFtomY9ypO4o8rrNWEpNSZEFzsMnfhBETUd3oOw=
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  server: 194.26.229.207
-  port: 4100
-  udp: true
-  type: vless
-  uuid: 026ecbd6-2838-40f6-b530-d2c303c4f629
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   server: 147.45.175.81
   port: 443
   udp: true
@@ -95,19 +79,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  server: 85.8.201.186
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7aa77858-f235-000c-9434-7ab060848b17
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdn.mornismp.ru
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  server: 196.245.153.104
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
+  server: 15b171g.nl7.h1clayd.click
   port: 443
   udp: true
   type: vless
@@ -117,21 +90,10 @@ proxies:
     public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
     short-id: 50a749f0eccb628c
   servername: 15b171g.nl7.h1clayd.click
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: 5b79e8a94241
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  server: 85.8.201.187
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7aa77858-f235-44d6-9434-7ab060848b17
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdn.mornismp.ru
-  skip-cert-verify: false
-  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -146,9 +108,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -163,8 +122,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
 rules:
 - MATCH,PROXIES
